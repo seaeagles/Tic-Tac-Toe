@@ -1,4 +1,4 @@
-/* body {
+body {
   width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -8,7 +8,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #fff;
+  color: gold;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #5271ff,
       0 0 82px #5271ff, 0 0 92px #5271ff, 0 0 102px #5271ff, 0 0 151px #5271ff;
 }
@@ -30,8 +30,8 @@ font-size: 1.6rem;
 .btn {
     display: flex;
     justify-content: center;
-    padding-bottom: 1.5rem;
-    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
     color: dodgerblue;
     text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #5271ff,
       0 0 82px #5271ff, 0 0 92px #5271ff, 0 0 102px #5271ff, 0 0 151px #5271ff;
@@ -40,17 +40,17 @@ font-size: 1.6rem;
       0 0 80px rgba(0, 255, 170, 0.485), 0 0 90px rgba(0, 255, 170, 0.352);
   }
 
-.game-container {
+/* .game-container {
     display: grid;
     grid-template-columns: repeat(3, auto);
     width: 306px;
     margin: 300px auto 20px auto;
-}
+} */
 
 .cell {
     font-family: "Permanent Marker", cursive;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     box-shadow: 0 0 0 1px #333333;
     border: 1px solid #333333;
     cursor: pointer;
@@ -58,7 +58,13 @@ font-size: 1.6rem;
     font-size: 60px;
 }
 
-@media only screen and (max-width: 750px) {
+.game-container:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+/* @media only screen and (max-width: 750px) {
     h1, h2 {
       font-size: 1.3rem;
       color: gold;
