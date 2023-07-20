@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 
+
+
 function Cell({ value, onCellClick }) {
   return <button className="cell"
   onClick={onCellClick}>
@@ -26,6 +28,8 @@ export default function GameContainer() {
     setCells(nextCells);
     setXIsNext(!xIsNext);
   }
+
+
 
   const winner = calculateWinner(cells);
   let status;
